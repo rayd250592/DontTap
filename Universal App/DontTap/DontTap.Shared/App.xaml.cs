@@ -97,7 +97,7 @@ namespace DontTap
                 // parameter
                 if (!rootFrame.Navigate(typeof(MainPage), e.Arguments))
                 {
-                    throw new Exception("Failed to create initial page");
+                    throw new Exception("Failed to create initial page");//error message
                 }
             }
 
@@ -131,7 +131,7 @@ namespace DontTap
             var deferral = e.SuspendingOperation.GetDeferral();
 
             // TODO: Save application state and stop any background activity
-            deferral.Complete(); //stops
+            deferral.Complete(); //stop
         }
     }
 }
