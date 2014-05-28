@@ -97,7 +97,7 @@ namespace DontTap
                 // parameter
                 if (!rootFrame.Navigate(typeof(MainPage), e.Arguments))
                 {
-                    throw new Exception("Failed to create initial page");//error message
+                    throw new Exception("Failed to create initial page");//error messages
                 }
             }
 
